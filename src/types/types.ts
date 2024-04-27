@@ -102,7 +102,7 @@ type UsersAgeGroup = {
 };
 
 export type Pie = {
-  orderFullfillment: OrderFullfillment;
+  orderFullFillment: OrderFullfillment;
   productCategories: Record<string, number>[];
   stockAvailablity: {
     inStock: number;

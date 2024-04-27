@@ -58,7 +58,11 @@ const CheckOutForm = () => {
 
     const { paymentIntent, error } = await stripe.confirmPayment({
       elements,
-      confirmParams: { return_url: window.location.origin },
+      confirmParams: { return_url: window.location.origin,
+        payment_intent_data: {
+          description: "Order from E-commerce website", // Add a descriptive text here
+        },
+       },
       redirect: "if_required",
     });
 
@@ -93,6 +97,7 @@ const Checkout = () => {
 
   if (!clientSecret) return <Navigate to={"/shipping"} />;
 
+  console.log("API Key", stripePromise)
   return (
     <Elements
       options={{

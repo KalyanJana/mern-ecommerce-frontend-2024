@@ -22,7 +22,9 @@ const Dashboard = () => {
 
   const { isLoading, data, isError } = useStatsQuery(user?._id!);
 
-  const stats = data?.stats!;
+  const stats = data?.stats! || {};
+
+  console.log("stats", stats)
 
   if (isError) return <Navigate to={"/"} />;
 
@@ -43,27 +45,27 @@ const Dashboard = () => {
 
             <section className="widget-container">
               <WidgetItem
-                percent={stats.changePercent.revenue}
+                percent={stats.ChangePercent.revenue}
                 amount={true}
                 value={stats.count.revenue}
                 heading="Revenue"
                 color="rgb(0, 115, 255)"
               />
               <WidgetItem
-                percent={stats.changePercent.user}
+                percent={stats.ChangePercent.user}
                 value={stats.count.user}
                 color="rgb(0 198 202)"
                 heading="Users"
               />
               <WidgetItem
-                percent={stats.changePercent.order}
+                percent={stats.ChangePercent.order}
                 value={stats.count.order}
                 color="rgb(255 196 0)"
                 heading="Transactions"
               />
 
               <WidgetItem
-                percent={stats.changePercent.product}
+                percent={stats.ChangePercent.product}
                 value={stats.count.product}
                 color="rgb(76 0 255)"
                 heading="Products"

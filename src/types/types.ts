@@ -68,7 +68,7 @@ type LatestTransaction = {
 
 export type Stats = {
   categoryCount: Record<string, number>[];
-  changePercent: CountAndChange;
+  ChangePercent: CountAndChange;
   count: CountAndChange;
   chart: {
     order: number[];

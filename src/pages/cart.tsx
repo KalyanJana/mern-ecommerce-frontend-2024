@@ -11,7 +11,7 @@ import {
   removeCartItem,
 } from "../redux/reducer/cartReducer";
 import { RootState, server } from "../redux/store";
-import { CartItem } from "../types/types";
+import type { CartItem } from "../types/types";
 
 const Cart = () => {
   const { cartItems, subtotal, tax, total, shippingCharges, discount } =

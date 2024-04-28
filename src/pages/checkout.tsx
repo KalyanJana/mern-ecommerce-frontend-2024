@@ -58,11 +58,10 @@ const CheckOutForm = () => {
 
     const { paymentIntent, error } = await stripe.confirmPayment({
       elements,
-      confirmParams: { return_url: window.location.origin,
-        payment_intent_data: {
-          description: "Order from E-commerce website", // Add a descriptive text here
-        },
-       },
+      confirmParams: { 
+        return_url: window.location.origin,   
+      },
+      
       redirect: "if_required",
     });
 
@@ -96,8 +95,11 @@ const Checkout = () => {
   const clientSecret: string | undefined = location.state;
 
   if (!clientSecret) return <Navigate to={"/shipping"} />;
+  
+  if (!stripePromise) {
+    throw new Error("Stripe key is missing or invalid");
+  }
 
-  console.log("API Key", stripePromise)
   return (
     <Elements
       options={{

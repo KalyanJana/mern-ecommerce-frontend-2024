@@ -12,6 +12,8 @@ const Shipping = () => {
     (state: RootState) => state.cartReducer
   );
 
+  const { user } = useSelector((state: RootState) => state.userReducer);
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -29,6 +31,7 @@ const Shipping = () => {
     setShippingInfo((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+
   const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -39,6 +42,8 @@ const Shipping = () => {
         `${server}/api/v1/payment/create`,
         {
           amount: total,
+          shippingInfo,
+          user,
         },
         {
           headers: {
@@ -51,7 +56,7 @@ const Shipping = () => {
         state: data.clientSecret,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error("Something went wrong");
     }
   };

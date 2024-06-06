@@ -1,18 +1,19 @@
 # MERN E-COMMERCE SERVER 2024
 
-Hi! My name is **Abhishek Nahar Singh**, I have created this tutorial to teach MERN Stack for free on YouTube.
+Hi! My name is **Kalyan Jana**, I have created this project for learning purpose.
 
 # Prerequisite
 
-1.  Must have basic knowledge of **Node**, **React**, **Express**, **MongoDB** . _I have made tutorial on each technology on YouTube , make sure to check it out_. **Links are Below respectively**
-2.  TypeScript - https://youtu.be/66_bET6sI20
-3.  Node - https://youtu.be/BSO9C8Z-YV8
-4.  React In One Video - https://youtu.be/b50zSyLiCYQ
-5.  React Full Course - https://www.youtube.com/playlist?list=PLt5mNkGuWcuWSUHxSzWP74IU9U4BTVLt0
-6.  Express - https://youtu.be/teipbke8c4A\
-7.  MongoDB - https://youtu.be/AYDP1S5BbTo
-8.  Master Backend In One Video - https://youtu.be/cGAdC4A5fF4
-9.  RestApi - https://youtu.be/AhCSfuG9Jxw _(optional)_
+1. Must have basic knowledge of Node, React, Express, MongoDB.
+2. Below are the YouTube link that I used to build this project -
+3.  TypeScript - (https://youtu.be/66_bET6sI20) 
+4. Node - (https://youtu.be/BSO9C8Z-YV8) 
+5. React In One Video - (https://youtu.be/b50zSyLiCYQ) 
+6. React Full Course - (https://www.youtube.com/playlist?list=PLt5mNkGuWcuWSUHxSzWP74IU9U4BTVLt0) 
+7. Express - (https://youtu.be/teipbke8c4A%5C) 
+8. MongoDB - (https://youtu.be/AYDP1S5BbTo) 
+9. Master Backend In One Video -(https://youtu.be/cGAdC4A5fF4) 
+10. RestApi - (https://youtu.be/AhCSfuG9Jxw) (optional) 
 
 # Install Dependencies
 
@@ -45,10 +46,5 @@ _fill each filed with your info respectively_
 
 ## Author
 
-**Instagram** Click [Here](https://www.instagram.com/meabhisingh) **@meAbhiSingh**
-
-**YouTube** Click [Here](https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw/) **6 Pack Programmer**
-
-**LinkedIn** Click [Here](https://in.linkedin.com/in/meabhisingh) **@meAbhiSingh**
-
-**Twitter** Click [Here](https://twitter.com/meAbhi_Singh) **@meAbhi_Singh**
+**GitHub** Click [Here](https://github.com/KalyanJana) @kalyan-jana-9b75b512a.
+**LinkedIn** click [here](https://www.linkedin.com/in/kalyan-jana-9b75b512a/) @kalyan-jana-9b75b512a/
